@@ -1,4 +1,4 @@
-package com.nineteentools.constants;
+package com.nineteentools.core.constants;
 
 /**
  * @author: 19zfl

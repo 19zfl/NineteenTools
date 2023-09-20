@@ -1,7 +1,7 @@
-package com.nineteentools.utils;
+package com.nineteentools.core.constants.utils;
 
-import com.nineteentools.constants.AnonymousVariableResources;
-import com.nineteentools.constants.CharacterResources;
+import com.nineteentools.core.constants.AnonymousVariableResources;
+import com.nineteentools.core.constants.CharacterResources;
 
 import java.util.Random;
 
@@ -12,11 +12,13 @@ import java.util.Random;
  */
 public class VerificationCodeUtil {
 
+    static Random random = new Random();
+    static char[] chars;
+
     // 六位验证码(字母数字随机)
     public static String SixCharNumberRandomVerificationCode() {
 
-        char[] chars = CharacterResources.RS_MAIN_CHAR.toCharArray();
-        Random random = new Random();
+        chars = CharacterResources.RS_MAIN_CHAR.toCharArray();
         while (true) {
             int i = random.nextInt(chars.length);
             AnonymousVariableResources.VerificationCode += chars[i];
@@ -31,8 +33,7 @@ public class VerificationCodeUtil {
     // 六位验证码（纯字母）
     public static String SixCharRandomVerificationCode() {
 
-        char[] chars = CharacterResources.RS_ONLYCHAR.toCharArray();
-        Random random = new Random();
+        chars = CharacterResources.RS_ONLYCHAR.toCharArray();
         for (int i = 0; i < 6; i++) {
             int index = random.nextInt(10);
             AnonymousVariableResources.VerificationCode += chars[index];
@@ -41,10 +42,14 @@ public class VerificationCodeUtil {
         return AnonymousVariableResources.VerificationCode;
     }
 
+    // 六位验证码（全大写）
+    public static String SixUppercaseRandomVerificationCode() {
+        return AnonymousVariableResources.VerificationCode;
+    }
+
     // 四位验证码（纯数字）
     public static String FourRandomVerificationCode() {
 
-        Random random = new Random();
         for (int i = 0; i < 4; i++) {
             int num = random.nextInt(10);
             AnonymousVariableResources.VerificationCode += num;
