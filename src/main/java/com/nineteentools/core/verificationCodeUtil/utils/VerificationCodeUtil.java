@@ -68,5 +68,4 @@ public class VerificationCodeUtil {
         return AnonymousVariableResources.VerificationCode;
     }
 
-
 }
