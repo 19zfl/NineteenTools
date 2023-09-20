@@ -44,6 +44,16 @@ public class VerificationCodeUtil {
 
     // 六位验证码（全大写）
     public static String SixUppercaseRandomVerificationCode() {
+
+        chars = CharacterResources.RS_ONLYUPPERCHAR.toCharArray();
+        while (true) {
+            int index = random.nextInt(chars.length);
+            AnonymousVariableResources.VerificationCode += chars[index];
+            if (AnonymousVariableResources.VerificationCode.length() > 6) {
+                break;
+            }
+        }
+
         return AnonymousVariableResources.VerificationCode;
     }
 
