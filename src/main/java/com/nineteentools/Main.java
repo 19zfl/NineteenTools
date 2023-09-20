@@ -2,6 +2,6 @@ package com.nineteentools;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("*****NineteenTools*****");
+        System.out.println("******NineteenTools******");
     }
 }
