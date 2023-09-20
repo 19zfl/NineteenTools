@@ -1,4 +1,4 @@
-package com.nineteentools.core.constants.utils;
+package com.nineteentools.core.utils;
 
 import com.nineteentools.core.constants.AnonymousVariableResources;
 import com.nineteentools.core.constants.CharacterResources;
