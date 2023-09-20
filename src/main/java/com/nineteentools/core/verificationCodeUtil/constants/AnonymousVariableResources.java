@@ -1,4 +1,4 @@
-package com.nineteentools.core.constants;
+package com.nineteentools.core.verificationCodeUtil.constants;
 
 /**
  * @author: 19zfl
