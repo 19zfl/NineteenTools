@@ -7,7 +7,7 @@ import java.util.UUID;
  * @description: uuid工具
  * @date 2023-09-20
  */
-public class fastIdUtil {
+public class FastIdUtil {
 
     // UUID
     public static String uuidUtil() {
