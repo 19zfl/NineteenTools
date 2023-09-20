@@ -7,7 +7,7 @@ import java.util.Random;
 
 /**
  * @author: 19zfl
- * @description:
+ * @description: 验证码工具
  * @date 2023-09-19
  */
 public class VerificationCodeUtil {
