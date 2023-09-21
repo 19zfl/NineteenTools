@@ -10,12 +10,14 @@ import java.util.UUID;
 public class FastIdUtil {
 
     // UUID
-    public static String uuidUtil() {
+    public static String RandomUuidUtil() {
         return UUID.randomUUID().toString();
     }
 
+
+
     // 文件命名uuid + 时间戳
-    public static String fileNameUUID() {
+    public static String FileNameUUID() {
         String prefix = UUID.randomUUID().toString();
         String suffix = String.valueOf(System.currentTimeMillis());
         return prefix + suffix;
