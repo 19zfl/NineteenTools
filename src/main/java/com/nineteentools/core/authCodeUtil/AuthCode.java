@@ -26,7 +26,7 @@ public class AuthCode {
         // 判断是否遵循规则
         List<String> typeList = Arrays.stream(CharacterResources.types).collect(Collectors.toList());
         if (!typeList.contains(type)) {
-
+            // TODO 根据输入类型调用不同的方法
         }
 
         return null;
