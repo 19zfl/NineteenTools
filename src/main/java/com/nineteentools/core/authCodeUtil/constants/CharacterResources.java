@@ -17,4 +17,6 @@ public class CharacterResources {
 
     public static String RS_ONLYNUMBERCHAR = "0123456789";
 
+    public static String[] types = {"NoChar", "NoNum", "CharNoUpper", "CharNoLower"};
+
 }
