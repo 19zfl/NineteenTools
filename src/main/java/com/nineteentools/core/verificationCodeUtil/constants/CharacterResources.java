@@ -15,4 +15,6 @@ public class CharacterResources {
 
     public static String RS_ONLYUPPERCHAR = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+    public static String RS_ONLYNUMBERCHAR = "0123456789";
+
 }
