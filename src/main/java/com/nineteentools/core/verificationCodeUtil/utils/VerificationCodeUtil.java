@@ -15,6 +15,26 @@ public class VerificationCodeUtil {
     static Random random = new Random();
     static char[] chars;
 
+    // 自定义位数验证码(数字)
+    public static String CustomBitNumberVerificationCode(int bit) {
+        chars = CharacterResources.RS_ONLYNUMBERCHAR.toCharArray();
+        for (int i = 0; i < bit - 1; i++) {
+            int index = random.nextInt(chars.length);
+            AnonymousVariableResources.VerificationCode += chars[index];
+        }
+        return AnonymousVariableResources.VerificationCode;
+    }
+
+    // 自定义位数验证码(字母)
+    public static String CustomBitCharVerificationCode(int bit) {
+        chars = CharacterResources.RS_ONLYCHAR.toCharArray();
+        for (int i = 0; i < bit - 1; i++) {
+            int index = random.nextInt(chars.length);
+            AnonymousVariableResources.VerificationCode += chars[index];
+        }
+        return AnonymousVariableResources.VerificationCode;
+    }
+
     // 六位验证码(字母数字随机)
     public static String SixCharNumberRandomVerificationCode() {
 
