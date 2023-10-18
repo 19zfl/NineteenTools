@@ -1,7 +1,7 @@
-package com.nineteentools.core.verificationCodeUtil.utils;
+package com.nineteentools.core.authCodeUtil.utils;
 
-import com.nineteentools.core.verificationCodeUtil.constants.AnonymousVariableResources;
-import com.nineteentools.core.verificationCodeUtil.constants.CharacterResources;
+import com.nineteentools.core.authCodeUtil.constants.AnonymousVariableResources;
+import com.nineteentools.core.authCodeUtil.constants.CharacterResources;
 
 import java.util.Random;
 
